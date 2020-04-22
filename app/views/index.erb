@@ -1,0 +1,7 @@
+<ol>
+<% @list.each do |i| %>
+    <h2><%= i.name %></h2>
+    <a href=<%= "/recipes/#{i.id}" %>>Click here for recipe! </a>
+    
+<% end %>
+</ol>
