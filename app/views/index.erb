@@ -1,0 +1,9 @@
+<h1>Recipes</h1>
+
+<% for recipe in @recipes %>
+  <a href="/recipes/<%= recipe.id %>">
+    <h2><%= recipe.name %></h2>
+    <p><%= recipe.ingredients %></p>
+    <h3><%= recipe.cook_time %></h3>
+  </a>
+<% end %>
